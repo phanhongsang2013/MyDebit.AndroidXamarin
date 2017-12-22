@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="#27ae60"
+      android:gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Debit"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textSize="17dp"
+        android:textColor="#FFF"
+        android:textAllCaps="true"
+        android:textStyle="bold"/>
+
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:orientation="vertical"
+      android:padding="10dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner"
+        android:padding="10dp"
+        android:inputType="number"
+        android:digits="0123456789.,"
+        android:id="@+id/txt_money"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:layout_marginBottom="10dp"
+        android:hint="Number of money..."/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/lv_user">
+    </ListView>
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/btn_add_contact"
+        android:background="#27ae60"
+        android:text="Add new user "
+        android:textColor="#FFFF"
+            />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/btn_save"
+        android:text="Save "
+        android:background="#c0392b"
+        android:textColor="#FFFF" />
+  </LinearLayout>
+</LinearLayout>
